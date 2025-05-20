@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tolash Tech Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #111827;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e02b651a7?auto=format&fit=crop&w=1600&q=80');
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .box {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+      .flex {
+        display: flex;
+        gap: 20px;
+      }
+      .flex .half {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tolash Tech Hub</h1>
+    <p>Learn. Print. Grow. Your Digital Partner in Ganmo</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero"></div>
+
+  <section id="about" class="box">
+    <h2>About Us</h2>
+    <div class="flex">
+      <div class="half">
+        <p>
+          We are a digital hub based in Ganmo, Kwara. We train people in tech skills like graphic design, freelancing, and digital literacy. We also offer printing, scanning, online registrations, and other business center services.
+        </p>
+      </div>
+      <div class="half">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Tech training">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="box">
+    <h2>Our Services</h2>
+    <ul>
+      <li>✅ Tech Skill Training (Design, Freelancing, Typing)</li>
+      <li>✅ Online Registrations (JAMB, NYSC, NIMC, etc)</li>
+      <li>✅ Printing, Photocopy, Scanning</li>
+      <li>✅ Seminar & Final Year Projects</li>
+    </ul>
+    <img src="https://images.unsplash.com/photo-1581092335468-1f094a3bb8c4?auto=format&fit=crop&w=800&q=80" alt="Business center">
+  </section>
+
+  <section id="contact" class="box">
+    <h2>Contact Us</h2>
+    <p><strong>Location:</strong> Ganmo, Kwara State</p>
+    <p><strong>Phone:</strong> <a href="tel:+2347068668100">07068668100</a></p>
+    <p><strong>Email:</strong> <a href="mailto:tobiogunyemi5@gmail.com">tobiogunyemi5@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Tolash Tech Hub. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
